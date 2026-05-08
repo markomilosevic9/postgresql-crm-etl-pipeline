@@ -16,7 +16,7 @@ The codebase demonstrates the design and implementation of an pipeline, includin
 - Builds the sales performance data mart as a materialized view using SCD2-pinned customer attributes and actual transaction dates
 - Maintains a persistent data quality log to track issues across pipeline runs
 
-# The pipeline
+
 The pipeline logic is placed within few .sql scripts meant to be executed one-by-one:
 
 ```bash

@@ -1,0 +1,16 @@
+services:
+  pg-storage:
+    image: postgres:14
+    container_name: pg-storage
+    hostname: pg-storage
+    environment:
+      POSTGRES_USER: storage
+      POSTGRES_PASSWORD: storage
+      POSTGRES_DB: project_data
+    volumes:
+      - postgres_storage_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+
+volumes:
+  postgres_storage_data:

@@ -4,9 +4,7 @@
 </p></a>
 
 # Goal
-This project implements a PostgreSQL ETL pipeline for processing mock CRM-like data (customers, plans, subscriptions, and transactions) with the goal of analyzing sales performance.
-
-The codebase demonstrates the design and implementation of an pipeline, including schema setup, data validation, deduplication, and loading from source CRM tables into dimensional models and fact tables. The project also includes data quality checks and issue logging.
+This project implements a PostgreSQL ETL pipeline for processing mock CRM-like data (customers, plans, subscriptions, and transactions) with the goal of analyzing sales performance. The codebase covers including schema setup, data validation, deduplication, and loading from source CRM tables into dimensional models and fact tables. The project also includes data quality checks and issue logging.
 
 ## Important aspects of pipeline implementation
 - Uses separate raw, clean, dimensional, mart, and ETL-control schemas

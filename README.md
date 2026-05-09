@@ -23,7 +23,7 @@ The pipeline logic is placed within few .sql scripts meant to be executed one-by
 └───sql
         sql/schema_init.sql - creates all schemas, tables, and the mart view
         sql/first_mock_data_insert.sql - loads initial batch into raw layer
-        sql/etl_pipeline.sql - run 1: processes first batch end-to-end
+        sql/etl_pipeline.sql - processes first batch end-to-end
         sql/second_mock_data_incremental_insert.sql - loads additional data batch (UPDATEs of existing records + new inserts)
 ```
 Note that after loading of incremental mock data sample, the re-execution of `etl_pipeline.sql` script is required.
